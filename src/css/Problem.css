@@ -1,0 +1,62 @@
+.problemsContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height:91vh;
+}
+.problemsContainer>div{
+    width:80%;
+    height:80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.problemsDisplay{
+    width:60%;
+    height:100%;
+    overflow-y: scroll;
+}
+.problemsDisplay>div{
+    width:100%;
+    height:10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom:1px solid black;
+}
+.problemsDisplay>div:hover{
+    cursor:pointer;background: rgba(0, 0, 0, 0.411);
+}
+.mR{
+    width:60% !important;
+    height:10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom:1px solid black;
+}
+.problemItemWrapper{
+    width:100%;
+}
+.problemItemWrapper>p{
+    width:33%;
+}
+@media(max-width: 1400px){
+    .problemsDisplay{
+        width:80%;
+    }
+    .mR{
+        width:80%;
+    }
+
+}
+@media(max-width: 600px){
+    .problemsDisplay{
+        width:100%;
+    }
+    .mR{
+        width:100%;
+    }
+}

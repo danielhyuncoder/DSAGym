@@ -1,0 +1,72 @@
+.loginContainer{
+    width:100%;
+    height:91vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.loginContainer>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:50%;
+    height:60%;
+}
+.loginContainer>div>input {
+    padding:10px;
+    width:40%;
+}
+.classicRow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin:0;
+}
+.bb{
+    color:rgb(69, 69, 255);
+    cursor:pointer
+}
+.loginContainer>div>button{
+    padding:10px;
+    width:20%;
+    cursor:pointer;
+    border:none;
+    background: rgb(61, 61, 255);
+    color:white;
+}
+.loginContainer>div>button:hover{
+    background: rgb(37, 37, 167);
+}
+@media (max-width:1400px){
+    .loginContainer>div{
+        width:80%;
+        height:70%;
+    }
+    .loginContainer>div>input{
+        width:60%;
+    }
+    .loginContainer>div>button{
+        width:40%;
+    }
+    .filterRow{
+        width:60% !important;
+    }
+    .adminProblemArea{
+        width:100% !important;
+    }
+}
+
+
+@media (max-width:500px){
+    .loginContainer>div>button{
+        width:50%;
+    }
+    .loginContainer>div>input{
+        width:80%;
+    }
+    .filterRow{
+        width:100% !important;
+    }
+}

@@ -1,0 +1,148 @@
+.codeWritingArea{
+    resize:none;
+    height:50%;
+    width:100%;
+}
+.failedSubmissions{
+    height:20%;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+.failedSubmissions>div{
+    width:90%;
+    height:90%;
+}
+.userContainer{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    height:91vh;
+    align-items: center;
+    justify-content: center;
+}
+.userContainer>div{
+    width:90%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    width:50%;
+    height:100%;
+}
+
+.displayBlock1{
+    width:100%;
+    height:30%;
+    border:1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.displayBlock1>div{
+    width:90%;
+    height:90%;
+}
+.hov {
+    cursor:pointer;
+}
+.displayBlock2{
+    width:100%;
+    margin-top:5%;
+    height:65%;
+    border:1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.displayBlock2>div{
+     display: flex;
+     flex-direction: column;
+     width:90%;
+     height:90%;
+}
+
+
+.displayBlock3{
+    width:95%;
+    margin-left:5%;
+    height:100%;
+    border:1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.displayBlock3>div{
+     display: flex;
+     flex-direction: column;
+     width:90%;
+     height:90%;
+}
+
+.progressBar{
+    width:100%;
+    height:30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.mediumYellow{
+    color: rgb(226, 192, 0);
+}
+.problemsList{
+    width:100%;
+    height:80%;
+    overflow-y:scroll;
+}
+.problemElement{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid black;
+    height:10%;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+}
+.problemElement>div{
+    width:90%;
+    height:90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.problemElement:hover{
+    cursor:pointer;
+    background:rgba(61, 61, 61, 0.315);
+}
+.specialWidthBlock1{
+    overflow: scroll !important;
+}
+@media(max-width:600px){
+    .userContainer>div{
+        flex-direction: column;
+    }
+    .col{
+        width:100%;
+    }
+    .userContainer{
+        height:300vh;
+    }
+    .displayBlock3{
+        width:100%;
+    margin-left:0;
+    }
+}

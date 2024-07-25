@@ -1,0 +1,80 @@
+.dashContainer{
+    width:100%;
+    height:91vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.dashContainer>div{
+    width:90%;
+    height:90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.addProblemButton{
+        border:none;
+        background:none;
+        cursor:pointer;
+        color: blue;
+        font-weight: bold;
+        padding:10px;
+        border-radius:10px;
+}
+.addProblemButton:hover{
+    background: rgba(68, 68, 68, 0.315);
+}
+.probDescEditor{
+    resize:none;
+    height:80%;
+    width:95%;
+}
+.problemBox{
+    width:95%;
+    height:auto;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.problemBox>div{
+    width:80%;
+    height:auto;
+}
+.delBtn{
+    width:30%;
+    height:60%;
+    background:rgb(255, 62, 62);
+    border-radius: 25px;
+    color:white;
+    border:none;
+    cursor:pointer;
+    font-weight: bold;
+}
+.delBtn:hover{
+    background:rgb(190, 45, 45);
+}
+.filterRow{
+    display: flex;
+    flex-direction: row;
+    width:40%;
+
+}
+.filterRow>input{
+    padding:10px;
+    width:40%;
+}
+.adminProblemArea{
+    width:60%;
+    height:80%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+.shadeInEffect:hover{
+    background: rgba(0, 0, 0, 0.411);
+}
