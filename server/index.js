@@ -2,7 +2,7 @@ const express = require('express');
 const cors=require('cors');
 const {Users, Problems, TotProbs} = require('./schemas')
 const mongoose = require('mongoose');
-//require('dotenv').config();
+require('dotenv').config();
 const {middleware} = require('./middleware');
 const rateLimit=require('express-rate-limit')
 let admin = require("firebase-admin");
