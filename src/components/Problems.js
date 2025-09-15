@@ -62,15 +62,18 @@ const Problems = () => {
                   <p style={{color:'purple'}}>Difficulty: </p>
                   <p style={{color:'red'}}>DSA Tag: </p>
             </div>
-           <div className="problemsDisplay">
+     
+
+               {displayProblems.length>0?<>
+               <div className="problemsDisplay">
                {displayProblems.map(problem=>(
                 <div className="problemItemWrapper" onClick={()=>navigate("/problem/"+problem.name.split(" ").join("_"))}>
                   <p>{problem.name}</p>
                   <p style={{color: problem.difficulty==='Hard'?"red":problem.difficulty==='Medium'?"gold":"green"}}>{problem.difficulty}</p>
                   <p>{problem.tag}</p>
                 </div>
-               ))}
-           </div>
+               ))}</div></> : (<b>You need to be logged in order to view problems.</b>)}
+        
           </div>
     </div>
   )
